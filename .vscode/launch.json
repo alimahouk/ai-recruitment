@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Next.js: debug",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "pnpm run dev",
+      "cwd": "${workspaceFolder}",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "name": "FastAPI: debug",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": ["backend.app.main:app", "--reload", "--port", "8000"],
+      "jinja": true,
+      "justMyCode": true
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Full Stack: Next.js + FastAPI",
+      "configurations": ["Next.js: debug", "FastAPI: debug"]
+    }
+  ]
+}
