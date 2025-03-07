@@ -101,4 +101,8 @@ A modern web application built with Next.js for AI-powered recruitment processes
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the terms specified in the LICENSE file.
+
+## Author
+
+Created by Ali Mahouk.
